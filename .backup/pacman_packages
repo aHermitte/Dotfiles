@@ -38,6 +38,7 @@ pipewire 1:1.2.1-1
 pipewire-alsa 1:1.2.1-1
 pipewire-jack 1:1.2.1-1
 pipewire-pulse 1:1.2.1-1
+pre-commit 3.7.1-1
 qt5-wayland 5.15.14+kde+r58-1
 qt6-wayland 6.7.2-4
 ripgrep 14.1.0-1

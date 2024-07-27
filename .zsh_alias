@@ -38,7 +38,7 @@ alias lp='pacman -Qe'
 alias cm='chromium'
 alias copilot='gh copilot'
 alias cops='gh copilot suggest'
-alias cope'gh copilot explain'
+alias cope='gh copilot explain'
 
 #other useful aliases
 alias mkdir='mkdir -p'

@@ -54,7 +54,6 @@ zinit snippet OMZP::kubectl
 zinit snippet OMZP::kubectx
 zinit snippet OMZP::command-not-found
 zinit snippet OMZP::vi-mode
-zinit snippet OMZP::web-search
 
 VI_MODE_RESET_PROMPT_ON_MODE_CHANGE=true
 VI_MODE_SET_CURSOR=true
@@ -64,7 +63,7 @@ PROMPT="$PROMPT\$(vi_mode_prompt_info)"
 RPROMPT="\$(vi_mode_prompt_info)$RPROMPT"
 
 # Load completions
-autoload -Uz compinit && compinit
+autoload -Uz compinit && compinit -d ~/.cache/zsh
 
 zinit cdreplay -q
 
@@ -79,7 +78,7 @@ bindkey '^[w' kill-region
 
 # History
 HISTSIZE=5000
-HISTFILE=~/.zsh_history
+HISTFILE=~/.cache/zsh/.zsh_history
 SAVEHIST=$HISTSIZE
 HISTDUP=erase
 setopt appendhistory
@@ -98,8 +97,6 @@ zstyle ':fzf-tab:complete:cd:*' fzf-preview 'ls --color $realpath'
 zstyle ':fzf-tab:complete:__zoxide_z:*' fzf-preview 'ls --color $realpath'
 
 # Aliases
-alias ls='ls --color'
-alias vim='nvim'
 alias c='clear'
 
 function yy() {

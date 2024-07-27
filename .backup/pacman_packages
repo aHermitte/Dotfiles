@@ -10,6 +10,7 @@ efibootmgr 18-3
 eza 0.18.23-1
 fzf 0.54.0-1
 git 2.45.2-1
+gitg 2:44-2
 github-cli 2.53.0-1
 glib2-devel 2.80.4-1
 grub 2:2.12-2

@@ -22,13 +22,8 @@
 
     // Modules Left
     "modules-left": [
-        "custom/osicon",
-        "custom/files",
-        "custom/kitty",
-        "custom/chatgpt",
-        "custom/github",
-        "custom/icloud",
-        "custom/empty",
+        "group/sysutils",
+        "group/links",
         "hyprland/window"
     ],
 
@@ -39,6 +34,7 @@
 
     // Modules Right    
     "modules-right": [
+        "custom/placeholder",
         "pulseaudio",
         "bluetooth",
         "battery", 

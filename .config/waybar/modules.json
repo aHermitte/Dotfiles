@@ -157,34 +157,34 @@
     "custom/kitty": {
         "format": " ",
         "on-click": "kitty",
-        "toottip": false
+        "tooltip-format": "Terminal"
     },
 
     "custom/files": {
         "format": " ",
         "on-click": "dolphin",
-        "tooltip": false
+        "tooltip-format": "File explorer"
     },
 
     // ChatGPT Launcher
     "custom/chatgpt": {
         "format": "󱜸 ",
         "on-click": "chromium --app=https://chat.openai.com",
-        "tooltip": false
+        "tooltip-format": "ChatGPT"
     },
 
     // iCloud Launcher
     "custom/icloud": {
         "format": "󰀸 ",
         "on-click": "chromium --app=https://www.icloud.com",
-        "tooltip": false
+        "tooltip-format": "iCloud"
     },
 
     //github Lauincher
     "custom/github": {
         "format": " ",
         "on-click": "chromium --app=https://github.com",
-        "tooltip": false
+        "tooltip-format": "GitHub"
     },
 
     // Calculator
@@ -206,23 +206,28 @@
         // START APPS LABEL
         "format": "Apps",
         // END APPS LABEL
-        "on-click": "sleep 0.2;rofi -show drun -replace",
-        "on-click-right": "~/dotfiles/hypr/scripts/keybindings.sh",
-        "tooltip": false
+        "on-click": "sleep 0.2; ~/dotfiles/.config/rofi/bin/launcher",
+        "on-click-right": "TODO",
     },
 //
     // Rofi Application Launcher
     "custom/osicon": {
         "format": " ",
-        "on-click": "rofi -show drun -replace",
-        "on-click-right": "~/dotfiles/hypr/scripts/keybindings.sh",
-        "tooltip": false
+        "on-click": "pkill -x rofi || ~/dotfiles/.config/rofi/bin/launcher",
+        "on-click-right": "todo",
+        "tooltip-format": "App Launcher"
     },    
 
     // Power Menu
     "custom/exit": {
         "format": "",
         "on-click": "wlogout",
+        "tooltip": false
+    },
+
+    "custom/placeholder": {
+        "on-click": "nvim ~/.notes",
+        "format": "  ", 
         "tooltip": false
     },
 
@@ -305,7 +310,17 @@
         "orientation": "horizontal",
         "modules": [
             "custom/chatgpt",
-            "custom/empty"
+            "custom/github",
+            "custom/icloud"
+        ]
+    },
+
+    "group/sysutils": {
+        "orientation": "horizontal",
+        "modules": [
+            "custom/osicon",
+            "custom/files",
+            "custom/kitty"
         ]
     },
 
@@ -337,15 +352,15 @@
     // Network
     "network": {
         "format": "{ifname}",
-        "format-wifi": "   {signalStrength}%",
-        "format-ethernet": "󰈀  {ifname}",
+        "format-wifi": " ",
+        "format-ethernet": "󰈀 ",
         "format-disconnected": "error 󰖪 ",
         "tooltip-format": " {ifname} via {gwaddri}",
         "tooltip-format-wifi": "  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\nUp: {bandwidthUpBits} Down: {bandwidthDownBits}",
         "tooltip-format-ethernet": " {ifname}\nIP: {ipaddr}\n up: {bandwidthUpBits} down: {bandwidthDownBits}",
         "tooltip-format-disconnected": "Disconnected",
         "max-length": 50,
-        "on-click": "~/dotfiles/.settings/networkmanager.sh"
+        "on-click": "pkill -x nmtui || nm-applet"
     },
 
     // Battery
@@ -355,10 +370,10 @@
             "warning": 30,
             "critical": 15
         },
-        "format": "{icon}   {capacity}%",
-        "format-charging": "{icon}  {capacity}%",
-        "format-plugged": "  {capacity}%",
-        "format-alt": "{icon}  {time}",
+        "format": "{icon}",
+        "format-charging": "{icon}",
+        "format-plugged": "",
+        "format-alt": "{icon}  {capacity}% {time}",
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
         "format-icons": [" ", " ", " ", " ", " "]
@@ -367,7 +382,7 @@
     // Pulseaudio
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{icon}   {volume}%",
+        "format": "{volume}% {icon}",
         "format-bluetooth": "{volume}%  {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": " {format_source}",
@@ -387,11 +402,12 @@
 
     // Bluetooth
     "bluetooth": {
-        "format": " {status}",
-        "format-disabled": "",
-        "format-off": "",
+        "format": " ",
+        "format-disabled": "󰂲",
+        "format-off": "󰂲",
         "interval": 30,
         "on-click": "blueman-manager",
+        "tooltip-format": "Status: {status}", 
         "format-no-controller": ""
     },
 

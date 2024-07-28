@@ -42,6 +42,14 @@ window#waybar {
   border-radius: 1rem;
 }
 
+tooltip {
+  background-color: @surface0;
+  border-radius: 1rem 1rem 1rem 1rem
+}
+
+tooltip label {
+  color: @lavender;
+}
 
 #custom-osicon,
 #custom-kitty,
@@ -102,6 +110,15 @@ window#waybar {
   color: @green;
 }
 
+
+#custom-placeholder {
+  background-color: @surface1;
+  padding: 0.5rem 1rem;
+  margin: 5px 0;
+  border-radius: 1rem 0px 0px 1rem;
+  color: @peach;
+}
+
 #clock,
 #network,
 #battery,
@@ -135,8 +152,6 @@ window#waybar {
   color: @sapphire;
 }
 #pulseaudio {
-  border-radius: 1rem 0px 0px 1rem;
-  margin-left: 1rem;
   color: @teal;
 }
 

@@ -22,34 +22,27 @@
 
     // Modules Left
     "modules-left": [
-        "custom/appmenuicon",
-        "hyprland/workspaces",
-        "group/links",
-        "group/settings",
-        "group/quicklinks",
+        "custom/osicon",
+        "custom/files",
+        "custom/kitty",
+        "custom/chatgpt",
+        "custom/github",
         "custom/icloud",
-        "custom/github"
+        "custom/empty",
+        "hyprland/window"
     ],
 
     // Modules Center
     "modules-center": [
-        "hyprland/window",
-        "custom/empty"
+        "hyprland/workspaces",
     ],
 
     // Modules Right    
     "modules-right": [
-        "custom/updates",
         "pulseaudio",
         "bluetooth",
         "battery", 
         "network",
-        "group/hardware",
-        "custom/cliphist",
-        "idle_inhibitor",
-        "custom/exit",
         "clock",
-        "tray",
-        "custom/ml4w-welcome"
     ]
 }

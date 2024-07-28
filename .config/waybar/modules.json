@@ -149,11 +149,23 @@
         "format": "",
         "on-click": "~/dotfiles/.settings/browser.sh",
         "tooltip": false
-    },    
+    },
+
+    "custom/kitty": {
+        "format": " ",
+        "on-click": "kitty",
+        "toottip": false
+    },
+
+    "custom/files": {
+        "format": " ",
+        "on-click": "dolphin",
+        "tooltip": false
+    },
 
     // ChatGPT Launcher
     "custom/chatgpt": {
-        "format": "GPT",
+        "format": "󱜸 ",
         "on-click": "chromium --app=https://chat.openai.com",
         "tooltip": false
     },
@@ -167,7 +179,7 @@
 
     //github Lauincher
     "custom/github": {
-        "format": " \ue65b ",
+        "format": " ",
         "on-click": "chromium --app=https://github.com",
         "tooltip": false
     },
@@ -197,8 +209,8 @@
     },
 //
     // Rofi Application Launcher
-    "custom/appmenuicon": {
-        "format": " ",
+    "custom/osicon": {
+        "format": " ",
         "on-click": "rofi -show drun -replace",
         "on-click-right": "~/dotfiles/hypr/scripts/keybindings.sh",
         "tooltip": false

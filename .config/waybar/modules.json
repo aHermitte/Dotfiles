@@ -153,7 +153,7 @@
 
     // ChatGPT Launcher
     "custom/chatgpt": {
-        "format": " ",
+        "format": "GPT",
         "on-click": "chromium --app=https://chat.openai.com",
         "tooltip": false
     },

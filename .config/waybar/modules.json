@@ -14,7 +14,7 @@
         "on-click": "activate",
         "active-only": false,
         "all-outputs": true,
-        "format": "{}",
+        "format": "<big>{}</big>",
         "format-icons": {
 			"urgent": "",
 			"active": "",
@@ -250,7 +250,7 @@
 
     // Clock
     "clock": {
-        "format": "{:%H:%M %a}",
+        "format": "<big>{:%H:%M}</big>",
         // "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         // START CLOCK FORMAT
@@ -382,7 +382,8 @@
     // Pulseaudio
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
-        "format": "{volume}% {icon}",
+        "format": "{icon}",
+        "format-alt": "{volume} %",
         "format-bluetooth": "{volume}%  {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
         "format-muted": " {format_source}",
@@ -397,7 +398,7 @@
             "car": " ",
             "default": [" ", " ", " "]
         },
-        "on-click": "pavucontrol"
+        "tooltip": false 
     },
 
     // Bluetooth

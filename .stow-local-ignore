@@ -17,6 +17,7 @@ _darcs
 packages.txt
 listpackages.sh
 \.backup
+\.pre-commit-config.yaml
 .+~          # emacs backup files
 \#.*\#       # emacs autosave files
 

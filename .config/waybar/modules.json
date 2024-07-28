@@ -48,12 +48,15 @@
     // Hyprland Window
     "hyprland/window": {
         "rewrite": {
+            "(.*)": "", // Suppresses all input, only the icon is displayed
             "(.*) - Brave": "$1",
-            "(.*) - Chromium": "$1",
+            "(.*) - Chromium": "",
             "(.*) - Brave Search": "$1",
             "(.*) - Outlook": "$1",
             "(.*) Microsoft Teams": "$1"
         },
+        "icon": true,
+        "icon-size": 20,
         "separate-outputs": true
     },
 
@@ -335,8 +338,8 @@
     "network": {
         "format": "{ifname}",
         "format-wifi": "   {signalStrength}%",
-        "format-ethernet": "  {ifname}",
-        "format-disconnected": "Disconnected",
+        "format-ethernet": "󰈀  {ifname}",
+        "format-disconnected": "error 󰖪 ",
         "tooltip-format": " {ifname} via {gwaddri}",
         "tooltip-format-wifi": "  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\nUp: {bandwidthUpBits} Down: {bandwidthDownBits}",
         "tooltip-format-ethernet": " {ifname}\nIP: {ipaddr}\n up: {bandwidthUpBits} down: {bandwidthDownBits}",
@@ -353,7 +356,7 @@
             "critical": 15
         },
         "format": "{icon}   {capacity}%",
-        "format-charging": "  {capacity}%",
+        "format-charging": "{icon}  {capacity}%",
         "format-plugged": "  {capacity}%",
         "format-alt": "{icon}  {time}",
         // "format-good": "", // An empty format will hide the module

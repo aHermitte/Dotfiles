@@ -121,11 +121,11 @@ window#waybar {
 }
 
 #battery {
-  color: @green;
+  color: @yellow;
 }
 
 #battery.charging {
-  color: @yellow;
+  color: @green;
 }
 
 #battery.warning:not(.charging) {

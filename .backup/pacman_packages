@@ -16,6 +16,7 @@ chromium 127.0.6533.72-1
 cliphist 1:0.5.0-1
 discord 0.0.61-1
 dnsmasq 2.90-1
+docker 1:27.1.1-1
 dolphin 24.05.2-1
 dunst 1.11.0-1
 efibootmgr 18-3

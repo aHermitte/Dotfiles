@@ -52,6 +52,9 @@ alias pyv='python -m pyvenv'
 alias vpip='./pyvenv/bin/pip'
 alias vpy='./pyvenv/bin/python3'
 
+#kali
+alias kli='cd ~/Documents/kli && docker start kli && docker exec -it kli /bin/zsh && cd -'
+
 # -----------------------------------------------------
 # ML4W Apps
 # -----------------------------------------------------

@@ -11,9 +11,12 @@ alias te='tmux attach-session -t E || tmux new-session -s E'
 alias tf='tmux attach-session -t F || tmux new-session -s F'
 alias tg='tmux attach-session -t G || tmux new-session -s G'
 alias th='bat ~/.config/tmux/tmux.conf'
-pfetch
-#source /usr/share/nvm/init-nvm.sh
-#cat ~/.cache/wal/sequences
+
+alias tmuxifier='~/dotfiles/.config/tmux/plugins/tmuxifier/bin/tmuxifier'
+
+export PATH="~/dotfiles/.config/tmux/plugins/tmuxifier/bin:$PATH"
+
+eval "$(tmuxifier init -)"
 
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
@@ -127,3 +130,4 @@ function rbdisk {
   fi
 }
 
+#Tmuxifier bin

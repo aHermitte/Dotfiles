@@ -227,7 +227,7 @@
 
     "custom/placeholder": {
         "on-click": "kitty nvim ~/.notes",
-        "format": "  ", 
+        "format": "  ", 
         "tooltip": false
     },
 

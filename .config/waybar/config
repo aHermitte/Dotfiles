@@ -35,10 +35,10 @@
     // Modules Right    
     "modules-right": [
         "custom/placeholder",
-        "pulseaudio",
         "bluetooth",
-        "battery", 
         "network",
+        "pulseaudio",
+        "battery", 
         "clock",
     ]
 }

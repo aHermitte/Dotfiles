@@ -156,7 +156,7 @@
 
     "custom/kitty": {
         "format": " ",
-        "on-click": "kitty",
+        "on-click": "kitty --class floating",
         "tooltip-format": "Terminal"
     },
 
@@ -226,7 +226,7 @@
     },
 
     "custom/placeholder": {
-        "on-click": "kitty nvim ~/.notes",
+        "on-click": "kitty --class floating nvim ~/.notes",
         "format": "  ", 
         "tooltip": false
     },
@@ -360,7 +360,7 @@
         "tooltip-format-ethernet": " {ifname}\nIP: {ipaddr}\n up: {bandwidthUpBits} down: {bandwidthDownBits}",
         "tooltip-format-disconnected": "Disconnected",
         "max-length": 50,
-        "on-click": "pkill -x nmtui || nm-applet"
+        "on-click": "pkill -x nmtui || kitty --class floating nmtui"
     },
 
     // Battery

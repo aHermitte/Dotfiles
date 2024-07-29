@@ -5,7 +5,11 @@
 All the necessary packages ( and some optionnal ones) are located in .backup
 Make sure to have them installed
 
-TODO: Make a script that runs it then stow
+You can do so by executing the install script:
+
+```
+./installpackages.sh
+```
 
 ## Usage
 

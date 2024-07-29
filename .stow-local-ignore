@@ -16,6 +16,7 @@ _darcs
 \.gitmodules
 packages.txt
 listpackages.sh
+installpackages.sh
 \.backup
 \.pre-commit-config.yaml
 .+~          # emacs backup files

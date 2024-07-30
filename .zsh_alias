@@ -54,6 +54,11 @@ alias vpy='./pyvenv/bin/python3'
 
 #kali
 alias kli='cd ~/Documents/kli && docker start kli && docker exec -it kli /bin/zsh && cd -'
+function klit() {
+  echo $1
+  #Launch a temporary Kali Linux container, with name from the first argument
+  docker run -it --rm --name "$1" kali
+}
 
 # -----------------------------------------------------
 # ML4W Apps

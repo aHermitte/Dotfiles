@@ -13,6 +13,7 @@ alias tg='tmux attach-session -t G || tmux new-session -s G'
 alias th='bat ~/.config/tmux/tmux.conf'
 
 alias tmuxifier='~/dotfiles/.config/tmux/plugins/tmuxifier/bin/tmuxifier'
+alias tcode='tmuxifier load-session code'
 
 export PATH="~/dotfiles/.config/tmux/plugins/tmuxifier/bin:$PATH"
 

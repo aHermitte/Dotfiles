@@ -1,1 +1,2 @@
 *.session.sh
+.config/tmux/plugins/tmuxifier/layouts/code.session.sh

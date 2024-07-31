@@ -31,6 +31,7 @@ fastjsonschema                2.20.0
 filelock                      3.13.3
 Flask                         2.3.3
 fonttools                     4.53.1
+gpg                           1.23.2
 identify                      2.5.36
 idna                          3.7
 imagesize                     1.4.1
@@ -83,8 +84,11 @@ pyparsing                     3.1.2
 pyperclip                     1.8.2
 pyproject_hooks               1.1.0
 pyproject-metadata            0.8.0
+PyQt5                         5.15.11
+PyQt5_sip                     12.15.0
 PyScreeze                     0.1.30
 PySide6                       6.7.2
+PySocks                       1.7.1
 pyte                          0.8.2
 pytest                        8.3.2
 pytest-cov                    5.0.0
@@ -115,6 +119,7 @@ steam                         1.6.0
 thefuck                       3.32
 toml                          0.10.2
 tomli                         2.0.1
+torbrowser-launcher           0.3.7
 tqdm                          4.66.2
 trove-classifiers             2024.7.22
 typeguard                     4.3.0

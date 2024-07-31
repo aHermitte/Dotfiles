@@ -106,8 +106,7 @@
         "return-type": "json",       
         "exec": "~/dotfiles/scripts/updates.sh",
         "restart-interval": 60,
-        "on-click": "alacritty --class dotfiles-floating -e ~/dotfiles/scripts/installupdates.sh",
-        "on-click-right": "~/dotfiles/.settings/software.sh",
+        "on-click": "kitty --class floating -e ~/dotfiles/scripts/installupdates.sh",
         "tooltip": false
     },
     

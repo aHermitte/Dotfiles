@@ -123,6 +123,7 @@ tooltip label {
 #network,
 #battery,
 #bluetooth,
+#custom-updates,
 #pulseaudio {
   background-color: @surface0;
   padding: 0.5rem 1rem;

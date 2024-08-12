@@ -1,7 +1,8 @@
 /usr/lib
-├── corepack@0.29.2
+├── corepack@0.29.3
 ├── node-gyp@10.2.0
 ├── nopt@7.2.0
 ├── npm@10.8.2
-└── semver@7.6.3
+├── semver@7.6.3
+└── typescript@5.5.4
 

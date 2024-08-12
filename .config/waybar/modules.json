@@ -179,6 +179,20 @@
         "tooltip-format": "iCloud"
     },
 
+  // telegram Launcher
+    "custom/telegram": {
+        "format": " ",
+        "on-click": "telegram-desktop",
+        "tooltip-format": "Telegram"
+    },
+  
+  // whatsapp Launcher
+    "custom/whatsapp": {
+        "format": "󰖣 ",
+        "on-click": "chromium --app=https://web.whatsapp.com/",
+        "tooltip-format": "WhatsApp"
+    },
+
     //github Lauincher
     "custom/github": {
         "format": " ",
@@ -308,6 +322,8 @@
     "group/links": {
         "orientation": "horizontal",
         "modules": [
+            "custom/whatsapp",
+            "custom/telegram",
             "custom/chatgpt",
             "custom/github",
             "custom/icloud"

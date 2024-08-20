@@ -35,6 +35,9 @@ return {
       lspconfig.clangd.setup({
         capabilities = capabilities,
       })
+      lspconfig.texlab.setup({
+        capabilities = capabilities,
+      })
       --ici
       --au dessus
       vim.keymap.set("n", "gD", vim.lsp.buf.declaration, {})
